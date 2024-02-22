@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Telephone Number Validator</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="https://i.ibb.co/GMdbL4s/icons8-phone-64.png" />
+</head>
+
+<body>
+    <nav id="header">
+        <a id='header-logo-anchor' href='https://www.freecodecamp.org' target='_blank'>
+            <picture>
+                <source media="(max-width: 600px)"
+                    srcset="https://d33wubrfki0l68.cloudfront.net/2f7693e1933ac514c960f51ceae72c91c6716eb2/b2efd/img/fcc_primary_small.svg" />
+                <img src="https://d33wubrfki0l68.cloudfront.net/52edd2dfddbec5db22a65dba39951af8fa9bdff6/006f7/img/fcc_primary_large.svg"
+                    alt="FCC Header Logo" style="height: 30px;" />
+            </picture>
+        </a>
+        <ul id="primary-nav" class="primary-nav flex">
+            <li>
+                <a class='nav-anchor active' href="https://github.com/glovek08" class="navbar-anchor" target="_blank">MY
+                    GITHUB</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div id="main-container">
+            <div id="text-container">
+                <h1>US NUMBER VALIDATOR</h1>
+                <p>In the US, phone numbers can be formatted in many ways. Here are some
+                    examples of valid formats for US phone numbers:</p>
+                <ul>
+                    <li><span class='country-code'>+1</span> <span class='area-code'>555</span>-<span
+                            class='office-code'>555</span>-<span class='sub-number'>5555</span>.</li>
+                    <li><span class='country-code'>+1</span> (<span class='area-code'>555</span>) <span
+                            class='office-code'>555</span>-<span class='sub-number'>5555</span>.</li>
+                    <li><span class='country-code'>1</span>(<span class='area-code'>555</span>)<span
+                            class='office-code'>555</span>-<span class='sub-number'>5555</span>.</li>
+                    <li><span class='country-code'>1</span> <span class='area-code'>555</span> <span
+                            class='office-code'>555</span> <span class='sub-number'>5555</span>.</li>
+                    <li><span class='area-code'>555</span><span class='office-code'>555</span><span
+                            class='sub-number'>5555</span>.</li>
+                    <li><span class='area-code'>555</span>-<span class='office-code'>555</span>-<span
+                            class='sub-number'>5555</span>.</li>
+                    <li>(<span class='area-code'>555</span>)<span class='office-code'>555</span>-<span
+                            class='sub-number'>5555</span>.</li>
+                </ul>
+                <p><i>Where</i>:</p>
+                <p id="color-code"><span class='country-code'>country code</span> | <span class='area-code'>area
+                        code</span> | <span class='office-code'>office code</span> | <span class='sub-number'>subscriber
+                        number</span></p>
+                <p>To check if a number is a valid US number just enter the number <a href="#user-input">here</a> and press CHECK.</p>
+                <hr class="text-container-hr">
+                <p>Please note that for US to US calls the country code can be ommited.</p>
+            </div>
+            <div id="phone-container">
+                <div id='phone-div'>
+                    <div id="phone-screen">
+                        <div id="phone-camera">
+                        </div>
+                        <div id="phone-screen-upper-section">
+                            <div id="phone-hour">8:35</div>
+                            <div id="phone-status-bar">
+                                <div id="phone-system-icons"></div>
+                            </div>
+                        </div>
+                        <div id="phone-screen-middle-section">
+                            <!-- Continuar Aca, hacer lo que queda en el medio de la pantalla, el phone div deberia ir a la derecha
+                             mientras que en menu contextual a la izquierda. -->
+                            <div id="phone-user-menu">
+                                <label for="user-input" id="user-input-label">ENTER A NUMBER</label>
+                                <input type="text" id="user-input" maxlength="17" /> <!-- REMEMBER TO VALIDATE !!! -->
+                                <div id="user-buttons">
+                                    <button id="check-btn" class='user-button' value="CHECK">CHECK</button>
+                                    <button id="clear-btn" class='user-button' value="CLEAR">CLEAR</button>
+                                </div>
+                                <div id="results-div">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="phone-navigation-bar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <address class="flex-item">
+            By GBBARN. 2024.<br>
+            Images used under <a href='https://unsplash.com/license' target="_blank">Unsplash licence</a>.
+        </address>
+        <div id="footer-separator"></div>
+        <ul id="footer-ul" class="flex-item">
+            <li><a class="footer-anchor" href="https://www.linkedin.com/in/g-bbarn/" target="_blank">
+                    <img src="https://i.ibb.co/Pht3RR4/In-White-48.png" alt="LinkedIn Logo" height="40">
+                </a>
+            </li>
+            <li>
+                <a class="footer-anchor" href="https://github.com/glovek08" target="_blank">
+                    <img src="https://i.ibb.co/bvn7KhS/github-mark-white.png" alt="Github Logo" height="40">
+                </a>
+            </li>
+        </ul>
+    </footer>
+</body>
+<script src="/js/script.js"></script>
+
+</html>
